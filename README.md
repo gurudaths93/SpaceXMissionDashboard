@@ -8,7 +8,7 @@ Functionalities implemented
 5. No data found is shown if applied filters doesn't fetch any results.
 6. Optimized for mobile, tab and desktop view as mentioned in the requirements.(Attached are the screenshots).
 7. Accesebility feature is implemented i.e. user can navigate thorugh contents using keyboard. And narrator can read the text.
-
+8. Open "https://spacexmissiondashboard.web.app/" to view the hosted application.
 
 Technology Stack Details
 -----------------------
