@@ -1,27 +1,27 @@
+Functionalities implemented
+---------------------------
+
+1. Data is client side rendered
+2. User can apply filters, see the results without page refresh. 
+3. Data is filtered without calling API i.e. only once API call is done to fetch data.
+4. Users can toggle filters and view the results.
+5. No data found is shown if applied filters doesn't fetch any results.
+6. Optimized for mobile, tab and desktop view as mentioned in the requirements.(Attached are the screenshots).
+7. Accesebility feature is implemented i.e. user can navigate thorugh contents using keyboard. And narrator can read the text.
+
+
+Technology Stack Details
+-----------------------
+
 # SpaceXMissionDashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. 
 
-## Running unit tests
+###Hosting
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Built as angular application and hosted on Google Firebase, with CI setup.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
