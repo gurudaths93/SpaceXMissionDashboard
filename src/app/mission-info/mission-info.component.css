@@ -1,0 +1,27 @@
+.program-container {
+    margin-top: 30px;
+    background-color: #fff;
+    padding:15px;
+  }
+  .mission-image-container{
+      display: flex;
+      align-items: center;
+      padding:5px;
+      background-color: #f1f1f1;
+  }
+  .mission-image{
+      height:150px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .mission-details-container{
+      margin-top:5px;
+  }
+  .missionid-heading-label{
+      font:700 14px "Arial";
+  }
+  .mission-name{
+      font:800 16px "Arial";
+      color:rgb(148, 85, 148);
+  }
+  

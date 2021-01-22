@@ -1,0 +1,67 @@
+<div class="col-12 program-container">
+    <div class="mission-image-container">
+      <img
+        class="mission-image"
+        src="{{ missionData.links.mission_patch_small }}"
+        alt="mission_image"
+      />
+    </div>
+    <div class="mission-details-container">
+      <h5 class="mission-name">{{ missionData.mission_name }}&nbsp;#{{ missionData.flight_number }}</h5>
+      <span class="missionid-heading-label">{{
+        labelData.mission_id
+      }}</span>
+      <div *ngIf="missionData.mission_id.length > 0">
+        <ul>
+          <li *ngFor="let missionid of missionData.mission_id">
+            {{ missionid }}
+          </li>
+        </ul>
+      </div>
+      <div *ngIf="missionData.mission_id.length == 0">
+        {{ labelData.no_data_found }}
+      </div>
+      <div>
+        <span class="missionid-heading-label"
+          >{{ labelData.launch_year }}:</span
+        >
+        <span>{{ missionData.launch_year }}</span>
+      </div>
+      <div>
+        <span class="missionid-heading-label"
+          >{{ labelData.successfull_launch }}:</span
+        >
+        <span>{{ missionData.launch_success }}</span>
+      </div>
+      <div>
+        <span class="missionid-heading-label"
+          >{{ labelData.sucessfull_landing }}:</span
+        >
+        <span
+          *ngIf="
+            missionData.rocket.first_stage.cores[0].land_success ==
+              true;
+            else notLaunded
+          "
+        >
+          {{ labelData.label_true }}
+        </span>
+        <ng-template #notLaunded>
+          <span>
+            <span
+              *ngIf="
+                missionData.rocket.first_stage.cores[0]
+                  .land_success == false;
+                else noLaundingData
+              "
+            >
+              {{ labelData.label_false }}
+            </span>
+          </span>
+          <ng-template #noLaundingData>
+            {{ labelData.no_data_found }}
+          </ng-template>
+        </ng-template>
+      </div>
+    </div>
+  </div>

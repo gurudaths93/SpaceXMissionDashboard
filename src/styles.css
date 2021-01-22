@@ -1,1 +1,145 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .container {
+    width: 100%;
+  }
+  
+  .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+  .footer {
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+  .footer-text{
+      text-align: center !important;
+      vertical-align: middle;
+  }
+  .row div {
+    border-radius: 5px;
+    text-align: left;
+    transition: background-color 1s;
+  }
+  
+  body{
+    background-color: #f1f1f1;
+    min-height: 100%;
+  }
+  
+  .col-2 {
+    width: 16.66%;
+  }
+  
+  .col-3 {
+    width: 25%;
+    padding:0 15px 0 15px;
+  }
+  
+  .col-6 {
+    width: 50%;
+    padding:10px 15px 10px 15px;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+  
+  .col-12 {
+    width: 100%;
+    padding:10px 15px 10px 15px;
+  }
+ 
+
+    /* viewport <= 700px */
+    @media screen and (min-width: 700px),screen and (max-width: 1024px) {
+        
+        .col-2 {
+            width: 50%;
+          }
+          
+          .col-3 {
+            width: 100%;
+            padding:0 15px 0 15px;
+          }
+          
+          .col-6 {
+            width: 100%;
+            padding:10px 45px 10px 45px;
+          }
+        
+          .col-10 {
+            width: 50%;
+          }
+          
+          .col-12 {
+            width: 100%;
+            padding:10px 15px 10px 15px;
+          }
+          
+      }
+      
+  
+  /* viewport <= 700px */
+  @media screen and (max-width: 700px) {
+    
+    .col-2 {
+        width: 100%;
+      }
+      
+      .col-3 {
+        width: 100%;
+        padding:0 15px 0 15px;
+      }
+      
+      .col-6 {
+        width: 100%;
+        padding:10px 45px 10px 45px;
+      }
+    
+      .col-10 {
+        width: 100%;
+      }
+      
+      .col-12 {
+        width: 100%;
+        padding:10px 15px 10px 15px;
+      }
+      
+  }
+  @media screen and (min-width: 1024px) {
+    .col-2 {
+        width: 16.66%;
+      }
+      
+      .col-3 {
+        width: 25%;
+        padding:0 15px 0 15px;
+      }
+      
+      .col-6 {
+        width: 50%;
+        padding:10px 15px 10px 15px;
+      }
+    
+      .col-10 {
+        width: 83.33%;
+      }
+      
+      .col-12 {
+        width: 100%;
+        padding:10px 15px 10px 15px;
+      }       
+  }

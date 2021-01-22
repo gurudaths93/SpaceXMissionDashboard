@@ -1,0 +1,14 @@
+{
+    "heading":"SpaceX Launch Programs",
+    "mission_id":"Mission Ids: ",
+    "launch_year":"Launch Year",
+    "successfull_launch":"Successfull Launch",
+    "sucessfull_landing":"Successfull Landing",
+    "no_data_found_filters":"No Data Found for the combination of filters! Please toggle or apply different combination of filters",
+    "no_data_found":"No Data Found!",
+    "label_true":"true",
+    "label_false":"false",
+    "label_filters":"Filters",
+    "developedBy":"Developed by:",
+    "developerName":"Gurudath"
+}

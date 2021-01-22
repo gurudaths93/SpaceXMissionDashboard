@@ -1,0 +1,121 @@
+    .mission-filter-label{
+      text-align: center;
+      font:500 14px "Arial";
+  }
+  .mission-filter{
+    text-align: left;
+      font:700 16px "Arial";
+      padding:5px;
+  }
+  .mission-year-filter-container{
+      margin-left:15px;
+  }
+  .mission-launch-year-selected,.mission-launch-status-selected,.mission-land-status-selected {
+      
+      border-radius: 5px;
+      background: #73AD21; 
+      text-align: center;
+      vertical-align: middle;
+      color:#000;
+      margin:5px;
+      flex:0;
+      cursor: pointer;
+      border:none !important;
+    }
+    .mission-launch-year,.mission-launch-status,.mission-land-status {
+      
+      border-radius: 5px;
+      background: #cef597; 
+      text-align: center;
+      vertical-align: middle;
+      color:#000;
+      margin:5px;
+      flex:0;
+      cursor: pointer;
+    }
+    .mission-filter-container{
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+        
+    @media screen and (min-width: 700px),screen and (max-width: 1024px) {
+      .mission-launch-year-selected,.mission-launch-status-selected,.mission-land-status-selected {
+        
+        border-radius: 5px;
+        background: #73AD21; 
+        text-align: center;
+        vertical-align: middle;
+        color:#000;
+        margin:15px 30px 15px 30px;
+        flex:0;
+        cursor: pointer;
+        border:none !important;
+      }
+      .mission-launch-year,.mission-launch-status,.mission-land-status {
+        
+        border-radius: 5px;
+        background: #cef597; 
+        text-align: center;
+        vertical-align: middle;
+        color:#000;
+        margin:15px 30px 15px 30px;
+        flex:0;
+        cursor: pointer;
+        border:none !important;
+      }
+    }
+    @media screen and (max-width: 700px) {
+
+        .mission-launch-year-selected,.mission-launch-status-selected,.mission-land-status-selected {
+        
+          border-radius: 5px;
+          background: #73AD21; 
+          text-align: center;
+          vertical-align: middle;
+          color:#000;
+          margin:0 50px 10px 50px;
+          flex:0;
+          cursor: pointer;
+          border:none !important;
+        }
+        .mission-launch-year,.mission-launch-status,.mission-land-status {
+          
+          border-radius: 5px;
+          background: #cef597; 
+          text-align: center;
+          vertical-align: middle;
+          color:#000;
+          margin:0 50px 10px 50px;
+          flex:0;
+          cursor: pointer;
+          border:none !important;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+      .mission-launch-year-selected,.mission-launch-status-selected,.mission-land-status-selected {
+  
+        border-radius: 5px;
+        background: #73AD21; 
+        text-align: center;
+        vertical-align: middle;
+        color:#000;
+        margin:5px;
+        flex:0;
+        cursor: pointer;
+        border:none !important; 
+      }
+      .mission-launch-year,.mission-launch-status,.mission-land-status {
+        
+        border-radius: 5px;
+        background: #cef597; 
+        text-align: center;
+        vertical-align: middle;
+        color:#000;
+        margin:5px;
+        flex:0;
+        cursor: pointer;
+        border:none !important;
+      }
+
+      }

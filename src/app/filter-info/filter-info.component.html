@@ -1,0 +1,65 @@
+<h5 class="mission-filter">{{ labelData.label_filters }}</h5>
+<br/>
+        <h5 class="mission-filter-label">
+          {{ labelData.launch_year }}
+        </h5>
+        <hr />
+        <div class="col-12 row mission-year-filter-container">
+          <button
+            (click)="getYear($event)"
+            *ngFor="let year of launchYears; index as y"
+            id="{{ y }}"
+            [ngClass]="
+              year == selectedYear
+                ? 'col-6 mission-launch-year-selected'
+                : 'col-6 mission-launch-year'
+            "
+            tabindex="{{y+1}}"
+            attr.aria-label="{{labelData.launch_year}} {{year}}"
+          >
+            {{ year }}
+        </button>
+        </div>
+
+        <h5 class="mission-filter-label">
+          {{ labelData.successfull_launch }}
+        </h5>
+        <hr />
+        <div class="col-12 row mission-year-filter-container">
+          <button
+            (click)="getSuccessLaunch($event)"
+            *ngFor="let sucessLaunch of launchFilter; index as y"
+            id="{{ y }}"
+            [ngClass]="
+              sucessLaunch.toLowerCase() == succuessLaunchFilter.toLowerCase()
+                ? 'col-6 mission-launch-status-selected'
+                : 'col-6 mission-launch-status'
+            "
+            tabindex="{{launchYears.length + y +1}}"
+            attr.aria-label="{{labelData.successfull_launch}} {{sucessLaunch}}"
+          >
+            {{ sucessLaunch }}
+        </button>
+        </div>
+        
+
+        <h5 class="mission-filter-label">
+          {{ labelData.sucessfull_landing }}
+        </h5>
+        <hr />
+        <div class="col-12 row mission-year-filter-container">
+          <button
+            (click)="getSuccessLand($event)"
+            *ngFor="let sucessLand of launchFilter; index as y"
+            id="{{ y }}"
+            [ngClass]="
+              sucessLand.toLowerCase() == succuessLandFilter.toLowerCase()
+                ? 'col-6 mission-land-status-selected'
+                : 'col-6 mission-land-status'
+            "
+            tabindex="{{launchYears.length + launchFilter.length +y +1}}"
+            attr.aria-label="{{labelData.sucessfull_landing}} {{sucessLand}}"
+          >
+            {{ sucessLand }}
+        </button>
+        </div>
