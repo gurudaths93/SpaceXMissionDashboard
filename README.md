@@ -1,4 +1,6 @@
-Functionalities implemented
+# SpaceXMissionDashboard
+
+## Functionalities implemented
 ---------------------------
 
 1. Data is client side rendered
@@ -10,10 +12,8 @@ Functionalities implemented
 7. Accesebility feature is implemented i.e. user can navigate thorugh contents using keyboard. And narrator can read the text.
 8. Open "https://spacexmissiondashboard.web.app/" to view the hosted application.
 
-Technology Stack Details
+## Technology Stack Details
 -----------------------
-
-# SpaceXMissionDashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 
@@ -21,7 +21,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. 
 
-###Hosting
+## Hosting
 
 Built as angular application and hosted on Google Firebase, with CI setup.
 
